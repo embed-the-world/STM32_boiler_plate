@@ -14,7 +14,8 @@ clean:
 	make --directory=./external/configCubeMx clean
 
 flash:
-	st-flash write ./external/configCubeMx/build/configCubeMx.bin 0x08000000
+	cp ./external/configCubeMx/build/configCubeMx.bin ./flashable/flashfile.bin
+	st-flash write ./flashable/flashfile.bin 0x08000000
 
 test: 
 	echo hi
