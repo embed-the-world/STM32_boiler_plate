@@ -2,12 +2,7 @@
 
 Using HAL library by STMicroelectronics.
 
-Meant for a quick start in tinkering.
-
-The version is tested for STM32F411CEU on a black pill board.
-A stepper motor controller is added with pulse pin on GPIO A7.
-Right now the stepper motor is implemented blocking the code.
-This will change in the future.
+Quick start a proejct for STM32F411 "black pill" board.
 
 ## usage
 the top level makefile has everything covered.
@@ -28,6 +23,4 @@ tools used:
 - arm-none-eabi-gcc
 - st-flash
 - gnu make
-
-these tools are not optional!
 

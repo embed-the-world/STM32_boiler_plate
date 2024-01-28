@@ -1,6 +1,6 @@
 
-#ifndef STM_GPIO
-#define STM_GPIO
+#ifndef STM_GPIO_H
+#define STM_GPIO_H
 
 typedef enum
 {
@@ -10,6 +10,8 @@ typedef enum
 
 extern stm_gpio_ret gpio_set_pulse_pin (void);
 extern stm_gpio_ret gpio_clear_pulse_pin (void);
+extern stm_gpio_ret gpio_activate_user_led (void);
+extern stm_gpio_ret gpio_deactivate_user_led (void);
 
-#endif /* STM_GPIO */
+#endif /* STM_GPIO_H */
 
